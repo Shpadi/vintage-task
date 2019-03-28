@@ -9,6 +9,9 @@ import * as VueGoogleMaps from 'vue2-google-maps'
 import BootstrapVue from 'bootstrap-vue'
 
 Vue.use(BootstrapVue)
+
+import 'bootstrap-vue/dist/bootstrap-vue.css';
+import 'bootstrap/dist/css/bootstrap.css'
 Vue.use(VeeValidate)
 Vue.use(Notifications)
 Vue.use(VueGoogleMaps, {

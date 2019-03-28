@@ -3,7 +3,7 @@
     <div id="nav">
       <Contacts></Contacts>
       <Location></Location>
-      <Form></Form>
+      <ContactUs></ContactUs>
     </div>
     <notifications group="form" />
   </div>
@@ -20,13 +20,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  a:hover {
+    text-decoration: none;
+  }
 }
 </style>
 <script>
   import Contacts from './components/Contacts'
-  import Form from './components/Form'
+  import ContactUs from './components/ContactUs'
   import Location from "./components/Location";
   export default {
-    components: {Location, Form, Contacts }
+    components: {Location, Contacts, ContactUs }
   };
 </script>

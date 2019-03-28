@@ -1,10 +1,5 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import api from './api/api'
 
-Vue.use(Vuex)
-
-export default new Vuex.Store({
+const locations = {
   state: {
     locations:{
       'kyiv': {
@@ -56,16 +51,4 @@ export default new Vuex.Store({
   getters: {
     locations: state => state.locations,
   },
-  mutations: {
-
-  },
-  actions: {
-    sendFormData({}, payload) {
-      const {data, onSuccess} = payload;
-      api.sendData(data)
-        .then(()=> {
-          onSuccess();
-        })
-    }
-  }
-})
+}

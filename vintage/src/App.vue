@@ -2,6 +2,7 @@
   <div id="app">
     <div id="nav">
       <Contacts></Contacts>
+      <Location></Location>
       <Form></Form>
     </div>
     <notifications group="form" />
@@ -24,7 +25,8 @@ body {
 <script>
   import Contacts from './components/Contacts'
   import Form from './components/Form'
+  import Location from "./components/Location";
   export default {
-    components: { Form, Contacts }
+    components: {Location, Form, Contacts }
   };
 </script>

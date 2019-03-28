@@ -6,7 +6,9 @@ import axios from 'axios'
 import Notifications from 'vue-notification'
 import VeeValidate from 'vee-validate';
 import * as VueGoogleMaps from 'vue2-google-maps'
+import BootstrapVue from 'bootstrap-vue'
 
+Vue.use(BootstrapVue)
 Vue.use(VeeValidate)
 Vue.use(Notifications)
 Vue.use(VueGoogleMaps, {

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "bootstrap-vue": "^2.0.0-rc.16",
     "postcss": "^7.0.14",
     "sass": "^1.17.3",
     "vee-validate": "^2.2.0",

@@ -50,7 +50,7 @@
     },
     computed: {
       ...mapGetters({
-        locations:'locations',
+        locations:'locations/locations',
       }),
       activeElement()  {
         return  this.locations[this.activeKey];
@@ -63,19 +63,21 @@
 </script>
 
 <style scoped lang="scss">
+  @import "@/assets/style/variables.scss";
+  @import "@/assets/style/typography.scss";
   .location {
     display: flex;
-    background-color: #262626;
+    background-color: $c-dark-grey;
     &__title {
       font-size: 34px;
       font-weight: 400;
       text-align: left;
-      color:#fff;
+      color:$c-white;
     }
     &__item {
       padding-left: 50px;
       padding-top: 50px;
-      color: #fff;
+      color: $c-white;
     }
     &__tabs {
       margin: 50px 0;
@@ -115,11 +117,6 @@
       margin-bottom: 100px;
     }
   }
-
-  .green {
-    color:#3db565;
-  }
-
   @media only screen and (max-width : 960px) {
     .location {
       flex-wrap:wrap;

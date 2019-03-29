@@ -43,6 +43,8 @@
 </script>
 
 <style scoped lang="scss">
+  @import "@/assets/style/variables.scss";
+  @import "@/assets/style/typography.scss";
   .contacts {
     padding: 50px;
     &__title {
@@ -79,13 +81,6 @@
     }
   }
 
-  .green {
-    color: #3db565;
-  }
-
-  .uppercase {
-    text-transform: uppercase;
-  }
 
   @media only screen and (max-width : 576px) {
     .contacts {

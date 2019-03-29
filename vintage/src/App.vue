@@ -23,6 +23,9 @@ body {
   a:hover {
     text-decoration: none;
   }
+  label {
+    margin-bottom: 0;
+  }
 }
 </style>
 <script>

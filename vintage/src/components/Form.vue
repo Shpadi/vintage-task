@@ -65,7 +65,7 @@
     },
     methods: {
       ...mapActions({
-        sendData: 'sendFormData',
+        sendData: 'formdata/sendFormData',
       }),
       sendDataEvent() {
         if (!this.isPersonalDataChecked) return this.showNotification('error', 'Agree with proessing')

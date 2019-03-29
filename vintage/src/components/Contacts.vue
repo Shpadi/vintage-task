@@ -23,7 +23,7 @@
             <li>Send message</li>
             <li><a class="green uppercase" href="viber://chat?number=+380970658239">Viber us</a></li>
             <li>Send form</li>
-            <li class="green uppercase">Contact us</li>
+            <li class="green uppercase cursor-pointer" @click="scrollToForm">Contact us</li>
           </ul>
         </div>
       </div>
@@ -38,7 +38,12 @@
 
 <script>
   export default {
-    name: 'Contacts'
+    name: 'Contacts',
+    methods: {
+      scrollToForm() {
+        window.scrollTo(0,document.body.scrollHeight);
+      }
+    }
   }
 </script>
 

@@ -65,7 +65,7 @@
     },
     methods: {
       ...mapActions({
-        sendData: 'formdata/sendFormData',
+        sendFormData: 'formdata/sendFormData',
       }),
       sendDataEvent() {
         if (!this.isPersonalDataChecked) return this.showNotification('error', 'Agree with proessing')
@@ -81,7 +81,7 @@
             onSuccess: this.sendDataSuccess,
           }
           this.isDataLoading = true;
-          return this.sendData(payload);
+          return this.sendFormData(payload);
         }
         this.showNotification('error', 'Not all fields correct')
       },
